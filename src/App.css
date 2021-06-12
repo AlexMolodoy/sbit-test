@@ -1,38 +1,107 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  padding: 32px 75px;
+  background-color: #19191B;
+  border-radius: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  margin-bottom: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MainTable {
+  margin-bottom: 20px;
+  font-family: 'Rubik';
+  color: white;
+  font-size: 18px;
+  width: 410px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MainTable tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Selector {
+  margin-bottom: 25px;
+}
+
+.selctorContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.selectorTableContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 961px;
+}
+
+.addTable td span {
+  font-size: 16px;
   color: white;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.monet {
+  justify-content: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainCell {
+  display: flex;
+  position: relative;
+
+}
+
+.addTable td {
+  width: 190px;
+  height: 60px;
+  padding: 0;
+
+}
+
+.MainTable td:nth-child(2n+1) span {
+  opacity: 50%;
+}
+
+.addTable {
+  background-color: #303030;
+  border-radius: 16px;
+  font-family: 'Roboto';
+  padding: 0 25px
+}
+
+.headAddTable {
+  font-size: 16px;
+  color: white;
+  opacity: 50%;
+  position: relative;
+}
+
+.headAddTable td:nth-child(2n)::before {
+  position: absolute;
+  height: 373px;
+  width: 180px;
+  content: '';
+  background-color: white;
+  opacity: 5%;
+  top: -2px;
+}
+
+
+
+.mainCell span::after {
+  position: absolute;
+  height: 1px;
+  width: 913px;
+  content: '';
+  background-color: white;
+  opacity: 10%;
+  left: 0;
+  bottom: 0;
 }
