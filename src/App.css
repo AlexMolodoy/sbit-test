@@ -9,6 +9,12 @@ header {
   margin-bottom: 100px;
 }
 
+.coinImg {
+  margin-right: 14px;
+  width: auto;
+  height: 20px;
+}
+
 .MainTable {
   margin-bottom: 20px;
   font-family: 'Rubik';
@@ -40,7 +46,6 @@ header {
 
 .addTable td span {
   font-size: 16px;
-  color: white;
   display: flex;
 
   justify-content: center;
@@ -48,14 +53,18 @@ header {
 
 }
 
-.monet {
-  justify-content: flex-start;
-}
-
 .mainCell {
   display: flex;
   position: relative;
 
+}
+
+.addTable td span.coinText {
+  background: linear-gradient(90deg, #FFCB44 0%, #F89521 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  text-shadow: 0px 10px 30px rgba(253, 184, 56, 0.3);
 }
 
 .addTable td {
