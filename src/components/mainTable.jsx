@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { observer } from "mobx-react-lite"
 import '../App.css';
 
 import store from '../store/mainStore';
 
 
-const MainTable = observer(() => {
-
-  console.log(store)
-
-  return (
+const MainTable = observer(() => (
     <table className={'MainTable'}>
       <tr>
         <td><span>Общий баланс (сумма):</span></td>
@@ -24,7 +20,7 @@ const MainTable = observer(() => {
         <td><span>{store.currentState ? store.freeSum() : ''} USDT</span></td>
       </tr>
     </table>
-  );
-})
+  )
+)
 
 export default MainTable;

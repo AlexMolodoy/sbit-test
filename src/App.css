@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 .App {
-  /* text-align: center; */
   padding: 32px 75px;
   background-color: #19191B;
   border-radius: 30px;
@@ -17,7 +30,7 @@ header {
 
 .MainTable {
   margin-bottom: 20px;
-  font-family: 'Rubik';
+  font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 18px;
   width: 410px;
@@ -81,7 +94,7 @@ header {
 .addTable {
   background-color: #303030;
   border-radius: 16px;
-  font-family: 'Roboto';
+  font-family: 'Rubik', sans-serif;
   padding: 0 25px
 }
 

@@ -27,7 +27,7 @@ class store {
   totalSum = () => {
     return this.currentState.reduce((acc, cur) => {
       return (acc + (Number(cur.balance) * Number(cur.price)));
-      },0);
+      },0).toFixed(6);
   }
 
   orderSum = () => {

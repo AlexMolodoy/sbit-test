@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import * as TYPES from 'prop-types';
 import { observer } from "mobx-react-lite"
 import store from '../store/mainStore';
 
@@ -53,7 +52,7 @@ const AddTable = observer(() => {
         <td><span>В ордерах</span></td>
         <td><span>Свободный объем</span></td>
       </tr>
-      {store.currentState ? store.currentState.map(element =>
+      {store.currentState && store.currentState.map(element =>
         <tr key={element.id}>
           <td className='mainCell'>
           <span className='coinText'>
@@ -73,17 +72,9 @@ const AddTable = observer(() => {
             <span style={{'color': stateColor}}>{element.available}</span>
           </td>
         </tr>
-      ) : ''}
+      )}
     </table>
   );
 })
-
-AddTable.propTypes = {
-  data: TYPES.array,
-};
-
-AddTable.defaultProps = {
-  data: [],
-};
 
 export default AddTable;
