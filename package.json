@@ -1,5 +1,6 @@
 {
   "name": "sbit-test",
+  "homepage": "https://AlexMolodoy.github.io/sbit-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
