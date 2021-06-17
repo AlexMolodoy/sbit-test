@@ -14,7 +14,7 @@ class store {
   }
 
   fetchData = () => {
-    fetch('http://api.sbit500.pro/api/testjob?id_user=' + this.currentUser)
+    fetch('https://api.sbit500.pro/api/testjob?id_user=' + this.currentUser)
       .then(response => response.json())
       .then(response => this.currentState = response);
   }
